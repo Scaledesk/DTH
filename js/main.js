@@ -16,7 +16,9 @@ jQuery(function($) {'use strict',
 
 	 	$(this).closest('.panel-heading').toggleClass('active');
 	});
-
+$(function(){
+    $('section').eq(0).css('padding-top', $('#header').outerHeight()+20);
+})
 	//Initiat WOW JS
 	new WOW().init();
 
