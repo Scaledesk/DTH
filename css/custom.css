@@ -6,3 +6,296 @@
     text-transform: uppercase;
     top: 0.625em;
 }
+.compare .card {
+    border: 1px solid rgb(202, 200, 200);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: .25s;
+    -webkit-transition:.25s;
+    -moz-transition:.25s;
+}
+.compare .card:hover {
+    box-shadow: 1px 1px 1px 2px #bbb;
+}
+.compare .card-image {
+    position: inherit;
+    opacity: 1;
+    height: auto;
+    padding: 0;
+    border: 1px solid #ebebeb;
+}
+.compare .card-image img{
+	width: 100%;
+	object-fit: cover;
+}
+.card .feature {
+    position: absolute;
+    color: #fff;
+    z-index: 1029;
+    background: #1f1f20;
+    height: 150px;
+    top: -61px;
+    left: -36px;
+    width: 100px;
+    text-align: right;
+    transform: rotate(45deg);
+}
+section:nth-child(1){
+    padding-top: 119px;
+}
+.card .feature h6.text {
+    position: inherit;
+        right: -4px;
+    bottom: 58px;
+    color: #fff;
+    transform: rotate(-90deg);
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.card .feature i.fa {
+    position: inherit;
+    right: 10px;
+    bottom: 82px;
+    font-size: 21px;
+}
+.compare .card .content {
+    text-align: left;
+    padding: 22px;
+        border-top: 1px solid #b3b3b3;
+}
+.compare .card .content label {
+    font-weight: 100;
+    display: inline-block;
+    height: 20px;
+    margin-bottom: 15px;
+    padding-right: 40px;
+    vertical-align: middle;
+    font-size: 18px;
+    float: right;
+}
+.compare .card .content input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    margin: 0px;
+    margin-top: 3px;
+}
+.compare .card .content h4.text {
+    margin: 0px;
+    font-weight: 100;
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 15px;
+}
+.center {
+    text-align: center;
+    padding-bottom: 8px;
+}
+.padding-top-24{
+	padding-top:24px;
+}
+.padding-bottom-24{
+	padding-bottom:24px;
+}
+.membership-pricing-table {
+  width: 100%;
+    margin:0px auto;
+}
+
+.membership-pricing-table table .icon-no,.membership-pricing-table table .icon-yes {
+    font-size: 22px
+}
+
+.membership-pricing-table table .icon-no {
+    color: #a93717
+}
+
+.membership-pricing-table table .icon-yes {
+    color: #209e61
+}
+
+.membership-pricing-table table .plan-header {
+    text-align: center;
+    font-size: 48px;
+    border: 1px solid #e2e2e2;
+    padding: 25px 0
+}
+
+.membership-pricing-table table .plan-header-free {
+    background-color: #eee;
+    color: #555
+}
+
+.membership-pricing-table table .plan-header-blue {
+    color: #fff;
+    background-color: #61a1d1;
+    border-color: #3989c6
+}
+
+.membership-pricing-table table .plan-header-standard {
+    color: #fff;
+    background-color: #ff9317;
+    border-color: #e37900
+}
+
+.membership-pricing-table table td {
+    text-align: center;
+    width: 15%;
+    padding: 7px 10px;
+    background-color: #fafafa;
+    font-size: 14px;
+    -webkit-box-shadow: 0 1px 0 #fff inset;
+    box-shadow: 0 1px 0 #fff inset
+}
+
+.membership-pricing-table table,.membership-pricing-table table td {
+    border: 1px solid #ebebeb
+}
+
+.membership-pricing-table table tr td:first-child {
+    background-color: transparent;
+    text-align: right;
+    width: 24%
+}
+
+.membership-pricing-table table tr td:nth-child(5) {
+    /*background-color: #FFF*/
+}
+
+.membership-pricing-table table tr:first-child td,.membership-pricing-table table tr:nth-child(2) td {
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.membership-pricing-table table tr:first-child th:first-child {
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: #e2e2e2
+}
+
+.membership-pricing-table table tr:first-child th .pricing-plan-name {
+    font-size: 22px
+}
+.tab-pane .media-body {
+    overflow: hidden;
+    float: left;
+    width: 60%;
+    padding-left: 39px;
+}
+.tab-content img {
+    border-radius: 4px;
+    height: 214px;
+    padding-right: 43px;
+    margin-top: -10px;
+}
+p.logo img {
+    margin-top: -3px;
+    height: 40px;
+}
+.item-1, item-2, item-3, .item-4 {
+    margin-bottom: 24px;
+}
+.fixed{
+	    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1011;
+}
+.overlay-box{
+	position: absolute;
+    left: 0px;
+    right: 0px;
+    background: #222;
+    top: 0px;
+    bottom: 0px;
+    opacity: .5;
+    z-index: -2;
+}
+.membership-pricing-table table tr:first-child th .pricing-plan-price {
+    line-height: 35px
+}
+
+.membership-pricing-table table tr:first-child th .pricing-plan-price>sup {
+    font-size: 45%
+}
+
+.membership-pricing-table table tr:first-child th .pricing-plan-price>span {
+    font-size: 30%
+}
+
+.membership-pricing-table table tr:first-child th .pricing-plan-period {
+    margin-top: -7px;
+    font-size: 25%
+}
+
+.membership-pricing-table table .header-plan-inner {
+    position: relative
+}
+
+.membership-pricing-table table .recommended-plan-ribbon {
+    box-sizing: content-box;
+    background-color: #dc3b5d;
+    color: #FFF;
+    position: absolute;
+    padding: 3px 6px;
+    font-size: 11px!important;
+    font-weight: 500;
+    left: -6px;
+    top: -22px;
+    z-index: 99;
+    width: 100%;
+    -webkit-box-shadow: 0 -1px #c2284c inset;
+    box-shadow: 0 -1px #c2284c inset;
+    text-shadow: 0 -1px #c2284c
+}
+
+.membership-pricing-table table .recommended-plan-ribbon:before {
+    border: solid;
+    border-color: #c2284c transparent;
+    border-width: 6px 0 0 6px;
+    bottom: -5px;
+    content: "";
+    left: 0;
+    position: absolute;
+    z-index: 90
+}
+
+.membership-pricing-table table .recommended-plan-ribbon:after {
+    border: solid;
+    border-color: #c2284c transparent;
+    border-width: 6px 6px 0 0;
+    bottom: -5px;
+    content: "";
+    right: 0;
+    position: absolute;
+    z-index: 90
+}
+
+.membership-pricing-table table .plan-head {
+    box-sizing: content-box;
+    background-color: #ff9c00;
+    border: 1px solid #cf7300;
+    position: absolute;
+    top: -33px;
+    left: -1px;
+    height: 30px;
+    width: 100%;
+    border-bottom: none
+}
+table {
+    max-width: 100%;
+    background-color: transparent;
+    width: 100%;
+}
+.banner-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner-inner {
+    height: 300px;
+    overflow: hidden;
+    padding: 0px;
+    margin-bottom: 40px;
+}
