@@ -68,15 +68,28 @@ hr {
   border-radius: 4px;
   border:none;
   margin-top: 10px;
+  transition: .25s;
+  -webkit-transition: .25s;
+  -moz-transition: .25s;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0);
 }
 
 
-.btn-primary:hover, 
-.btn-primary:focus{
-  background: rgba(197, 45, 47, 0.55);
-  outline: none;
-  box-shadow: none;
-} 
+.btn-primary:hover, .btn-primary:focus {
+    background: #fff;
+    outline: 1px rgba(197, 45, 47, 0.55);
+    box-shadow: none;
+    color: rgba(197, 45, 47, 0.55) !important;
+    border: 1px solid rgba(197, 45, 47, 0.55) !important;
+}
+a.btn-primary:hover, a.btn-primary:focus {
+    background: #fff;
+    outline: 1px rgba(197, 45, 47, 0.55);
+    box-shadow: none;
+    color: rgba(197, 45, 47, 0.55) !important;
+    border: 1px solid rgba(197, 45, 47, 0.55) !important;
+}
 
 .btn-transparent {
   border: 3px solid #fff;
@@ -914,7 +927,7 @@ a.accordion-toggle  i{
 }
 
 .tab-content{
-  padding: 20px;
+  padding: 0px 0px;
 }
 
 .tab-content h2{

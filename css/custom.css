@@ -62,7 +62,7 @@ section:nth-child(1){
 .compare .card .content {
     text-align: left;
     padding: 22px;
-        border-top: 1px solid #b3b3b3;
+        border-top: 1px solid rgba(179, 179, 179, 0.07);
 }
 .compare .card .content label {
     font-weight: 100;
@@ -179,14 +179,29 @@ section:nth-child(1){
 .tab-pane .media-body {
     overflow: hidden;
     float: left;
-    width: 60%;
-    padding-left: 39px;
+    min-height: 253px;
 }
 .tab-content img {
-    border-radius: 4px;
-    height: 214px;
-    padding-right: 43px;
-    margin-top: -10px;
+       border-radius: 4px;
+    height: 125px;
+    display: inline-block;
+}
+.tab-content .tab-pane .sec-1 .sec-1-content .btn-primary {
+    display: inline-block;
+    margin-top: 1px;
+}
+.tab-content .tab-pane .sec-1 .sec-1-content {
+    padding-top: 6px;
+}
+.tab-content .tab-pane .sec-1 {
+    text-align: center;
+}
+.tab-content .tab-pane .sec-1:nth-child(1) {
+    border: none;
+}
+.tab-content .tab-pane .sec-1 {
+    text-align: center;
+    border-left: 1px solid rgba(153, 153, 153, 0.37);
 }
 p.logo img {
     margin-top: -3px;
@@ -298,4 +313,130 @@ table {
     overflow: hidden;
     padding: 0px;
     margin-bottom: 40px;
+}
+.compare-wrap .first-content, .compare-wrap .second-content {
+    border: .1px solid rgba(153, 153, 153, 0.38);
+    padding: 0px;
+    background: #fff;
+}
+.compare-wrap .first-content .image img, .compare-wrap .second-content .image img {
+    height: 175px;
+}
+.compare-wrap{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+}
+.compare-wrap .view-more {
+        position: absolute;
+    z-index: 11;
+    bottom: 14px;
+    left: 0px;
+    right: 0px;
+}
+.compare-wrap .first-content .logo-image, .compare-wrap .second-content .logo-image {
+    padding-top: 7px;
+    padding-bottom: 12px;
+    border-bottom: .1px solid rgba(153, 153, 153, 0.42);
+    margin-bottom: 10px;
+}
+.compare-wrap .first-content .logo-image img, .compare-wrap .second-content .logo-image img {
+    height: 28px;
+}
+.compare-wrap .first-content .name, .compare-wrap .second-content .name {
+    border-top: .1px solid #ebebeb;
+}
+.compare-wrap .first-content .name .title, .compare-wrap .second-content .name .title {
+    font-size: 17px;
+    font-weight: 100;
+    margin-top: 14px;
+}
+.compare-wrap .first-content .name .Price-detail, .compare-wrap .second-content .name .Price-detail {
+    color: #dc9a19;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 23px;
+}
+ul.feature-list {
+    padding: 20px 5px;
+    margin: 0px;
+    list-style-type: none;
+}
+ul.feature-list li {
+    position: relative;
+    font-size: 14px;
+    letter-spacing: .9px;
+    font-weight: 100;
+    padding-bottom: 8px;
+}
+ul.feature-list li:before {
+    position: absolute;
+    content: "\f00c";
+    font-family: FontAwesome;
+    left: 4px;
+    color: #f0c419;
+}
+.compare-wrap .first-content .feature-content, .compare-wrap .second-content .feature-content {
+    padding-bottom: 26px;
+}
+.product {
+        border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    padding-bottom: 20px;
+}
+.page-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #752122;
+    margin-bottom: 0px;
+    padding-top: 11px;
+    margin-left: -20px;
+}
+.product-feature ul.feature-list li:before {
+    left: -24px;
+}
+.product-feature ul.feature-list li {
+    letter-spacing: .1px;
+    font-weight: 700;
+}
+.product .product-image .image {
+    border-right: 1px solid #e2e2e2;
+}
+.product .product-content {
+    border-right: 1px solid #e2e2e2;
+}
+ul.tabs li {
+    display: inline-block;
+    padding: 10px 32px;
+    font-size: 17px;
+    /*border: 1px solid #e2e2e2;*/
+    margin: 0px;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    cursor: pointer;
+    transition: .25s;
+    -webkit-transition:.25s;
+    -moz-transition:.25s;
+    border-bottom: 2px solid rgba(255,255,255,0);
+}
+ul.tabs {
+    list-style-type: none;
+    padding-left: 11px;
+    position: relative;
+    border-bottom: 1px solid #e2e2e2;
+}
+ul.tabs li.active-tab {
+    border-bottom: 2px solid #752122;
+    color: #752122;
+}
+ul.tabs li:hover,ul.tabs li:focus {
+    background: #fafafa;
+    columns: #999;
+}
+.tabs-sec .tab-content .t {
+    display: none;
+}
+.tabs-sec .tab-content .t.active-content {
+    display: block;
 }

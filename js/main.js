@@ -70,40 +70,6 @@ $(function(){
 		social_tools: false
 	});	
 });
-$("#slider-item").lightSlider({
-          gallery:true,
-          item:3,
-          thumbItem:0,
-          slideMargin: 20,
-          speed:1200,
-          auto:true,
-          loop:true,
-         responsive: [{
-             breakpoint : 817,
-             settings: {
-               item: 2,
-               slideMove: 1,
-               sliderWidth: 300
-                 }
-             }, {
-             breakpoint:666,
-             settings: {
-               item: 1,
-               slideMove: 1,
-               sliderWidth: 375
-               }
-             }, {
-             breakpoint: 480,
-             settings: {
-               item: 1,
-               slideMove: 1,
-               sliderWidth: 375
-               }
-             }],
-          onSliderLoad: function() {
-              $('#slider-item').removeClass('cS-hidden');
-          }
-      });
 $(function(){
 	$('#comparison-c').click(function(e){
 		e.preventDefault();
@@ -135,4 +101,27 @@ $(function() {
       }
     }
   });
+});
+/* tabs function */
+$('ul.tabs > li').click(function(){
+    $('div.tab-content').find('div.active-content').removeClass('active-content');
+    $('ul.tabs > li').removeClass('active-tab');
+    $(this).parents('div.tabs-sec').find('div.tab-content').find('div.'+this.className).addClass('active-content');
+    $(this).addClass('active-tab');
+})
+/* tabs function */
+/*accordian function*/
+$('.panel > .panel-title').click(function(){
+    if($(this).parents('.panel').find('.panel-content').hasClass('in')==true){
+        $(this).parents('.panel').find('.panel-content').slideUp(150).removeClass('in');
+        $(this).find('i.fa').removeClass('fa-angle-up').addClass('fa-angle-down');
+    }else if($('.panel-content').hasClass('in')==true){
+        $('.faq-content .panel-content').removeClass('in').slideUp(150);
+        $('.panel-title').find('i.fa').removeClass('fa-angle-up').addClass('fa-angle-down');
+        $(this).parents('.panel').find('.panel-content').slideDown(150).addClass('in');
+        $(this).find('i.fa').removeClass('fa-angle-down').addClass('fa-angle-up');
+    }else{
+    $(this).parents('.panel').find('.panel-content').slideDown(150).addClass('in');
+    $(this).find('i.fa').removeClass('fa-angle-down').addClass('fa-angle-up')
+    }
 });
