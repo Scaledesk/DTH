@@ -380,10 +380,12 @@ ul.feature-list li:before {
     padding-bottom: 26px;
 }
 .product {
-        border-left: 1px solid #e2e2e2;
+   border-left: 1px solid #e2e2e2;
     border-right: 1px solid #e2e2e2;
     border-bottom: 1px solid #e2e2e2;
     padding-bottom: 20px;
+    margin-top: 1px;
+    border-top: 1px solid #e2e2e2;
 }
 .page-title {
     font-size: 28px;
@@ -439,4 +441,158 @@ ul.tabs li:hover,ul.tabs li:focus {
 }
 .tabs-sec .tab-content .t.active-content {
     display: block;
+}
+h4.important i.fa {
+    position: absolute;
+    color: #f0c419;
+    top: 0px;
+    right: 33%;
+}
+h4.important:nth-child(3) {
+    border-top: none;
+}
+h4.important {
+    font-weight: 100;
+    font-size: 14px;
+    border-top: 1px solid #e2e2e2;
+    margin: 0PX;
+    padding: 6px 0px;
+    border-bottom: 1px solid #e2e2e2;
+    text-align: center;
+    margin-right: 15px;
+    position: relative;
+}
+.product .product-help .free-box .free-box-image img {
+    height: 214px;
+}
+.product .product-help .free-box,.product .product-help .price-detail{
+    overflow: hidden;clear: both;
+        padding-top: 20px;
+}
+.product .product-help .free-box .free-box-image,.product .product-help .price-detail .price-offer {
+    float: left;
+    width: 35%;
+    overflow: hidden;
+}
+.product .product-help .price-detail{
+    border-top: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+.product .product-help .price-detail .price-offer {
+    width:50%;
+}
+.product .product-help .price-detail .price-offer h4.price {
+    font-weight: 100;
+    letter-spacing: .9px;
+    font-size: 15px;
+    text-decoration: line-through;
+}
+.product .product-help .price-detail .price-offer h4.price.active-price {
+    color: #752122;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 17px;
+}
+.product .product-help .price-detail .buy-now {
+    margin-top: 33px;
+    display: inline-block;
+    margin-left: 14PX;
+}
+.product .product-help .price-detail .price-offer h4.content {
+    FONT-WEIGHT: 100;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.faq-content .panel .panel-content{
+    display: none;
+    background: #fff;
+    border: 1px solid #e2e2e2;
+}
+.product .product-image .image img {
+    height: 364px;
+    width: 100%;
+}
+.product .product-help .free-box .free-offer-content h3.title {
+    margin-top: 0px;
+}
+.panel-title i.fa {
+    float: right;
+    font-size: 24px;
+    margin-top: -6px;
+}
+ul.desc li:before {
+    position: absolute;
+    content: ">";
+    left: -16px;
+    top: 4px;
+    color: #752122;
+    font-weight: 700;
+    font-size: 17px;
+}
+ul.desc li {
+    list-style-type: none;
+    position: relative;
+    padding: 3px 0px;
+    font-size: 15px;
+    letter-spacing: .9px;
+    width: 50%;
+    float: left;
+}
+ul.desc {
+    margin: 0px;
+}
+.no-gutter{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.channels .page-title {
+    font-size: 23px;
+    margin-bottom: 11px;
+    margin-left: 0px;
+    letter-spacing: .9px;
+}
+.channels {
+    border: 1px solid #e2e2e2;
+}
+ .channels .channel-logo img {
+    height: 56px;
+    object-fit: cover;
+}
+.channels .channel-logo {
+    float: left;
+    margin: 10px 19px;
+}
+.compare-wrap.col-sm-4.col-md-3.col-xs-12 {
+    text-align: center;
+}
+.compare-wrap.col-sm-4.col-md-3.col-xs-12 .first-content {
+    box-shadow: 0px 0px 1px 2px #e2e2e2;
+    overflow: hidden;
+    padding-bottom: 18px;
+}
+.compare-wrap.col-sm-4.col-md-3.col-xs-12 .first-content .view-detail a, .compare-wrap.col-sm-4.col-md-3.col-xs-12 .first-content .buy-button a {
+    padding: 7px 6px;
+    font-size: 12px;
+}
+.compare-wrap.col-sm-4.col-md-3.col-xs-12 .new-gift-div {
+    position: absolute;
+    top: 48px;
+    background: #752122;
+    padding: 4px 10px;
+    color: #fff;
+}
+.compare-wrap.col-sm-4.col-md-3.col-xs-12 .new-gift-div:after {
+    position: inherit;
+    content: "";
+    border-top: 15px solid rgba(255, 255, 255, 0);
+    border-right: 15px solid rgba(255, 255, 255, 0);
+    border-bottom: 15px solid rgba(255, 255, 255, 0);
+    border-left: 15px solid #752122;
+    right: -30px;
+    top: 0px;
+}
+.compare-wrap.col-sm-4.col-md-3.col-xs-12 .new-gift-div p {
+    margin: 0px;
 }
