@@ -596,3 +596,21 @@ ul.desc {
 .compare-wrap.col-sm-4.col-md-3.col-xs-12 .new-gift-div p {
     margin: 0px;
 }
+#middle .col-sm-6.wow.fadeInDown.animated.info {
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
+}
+#middle .col-sm-6.wow.fadeInDown.animated.info .skill{
+    background: #fff;
+    overflow: hidden;
+    padding-bottom: 25px;
+}
+#middle .col-sm-6.wow.fadeInDown.animated.info .skill img{
+    height: 606px;
+    position: absolute;
+    top: -121px;
+    z-index: -9;
+    width: 649px;
+    left: -32px;
+}
