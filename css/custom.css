@@ -327,6 +327,9 @@ table {
     position: relative;
     margin-bottom: 30px;
 }
+.compare-wrapper :hover{
+    transform: scale(1.01);
+}
 .compare-wrap .view-more {
         position: absolute;
     z-index: 11;

@@ -2560,6 +2560,12 @@ shortcodes page css
 .fa-custom{
   font-size: 35px;
 }
+.bg-blue{
+  background: rgba(255, 0, 3, 0.41);
+}
+.bg-yellow{
+  background: rgba(255, 212, 27, 0.77);
+}
 
 
 
