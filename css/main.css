@@ -91,10 +91,10 @@ hr {
 
 
 .btn-primary:hover, .btn-primary:focus {
-    background: #fff;
+  background: rgba(197, 45, 47, 0.55);
     outline: 1px rgba(197, 45, 47, 0.55);
     box-shadow: none;
-    color: rgba(197, 45, 47, 0.55) !important;
+  color: #fff;
     border: 1px solid rgba(197, 45, 47, 0.55) !important;
 }
 
@@ -106,10 +106,10 @@ hr {
   border: 1px solid rgba(254, 208, 27, 0.85) !important;
 }
 a.btn-primary:hover, a.btn-primary:focus {
-    background: #fff;
+  background: rgba(197, 45, 47, 0.55);
     outline: 1px rgba(197, 45, 47, 0.55);
     box-shadow: none;
-    color: rgba(197, 45, 47, 0.55) !important;
+    color: #fff !important;
     border: 1px solid rgba(197, 45, 47, 0.55) !important;
 }
 a.btn-yellow:hover, a.btn-yellow:focus {
@@ -1916,11 +1916,12 @@ ul.social_icons li  a i{
 **************************/
 
 .gmap-area {
-  background-image: url("../images/map.jpg");
+  background-image: url("../images/banner.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
   padding: 70px 0;
+  height: 30em;
 }
 
 .gmap-area .gmap iframe {
@@ -2561,7 +2562,11 @@ shortcodes page css
   font-size: 35px;
 }
 .bg-blue{
-  background: rgba(255, 0, 3, 0.41);
+  background: #fff;
+  outline: 1px rgba(197, 45, 47, 0.55);
+  box-shadow: none;
+  color: rgba(197, 45, 47, 0.55) !important;
+  border: 1px solid rgba(197, 45, 47, 0.55) !important;
 }
 .bg-yellow{
   background: rgba(255, 212, 27, 0.77);

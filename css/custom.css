@@ -154,7 +154,7 @@ section:nth-child(1){
 
 .membership-pricing-table table tr td:first-child {
     background-color: transparent;
-    text-align: right;
+    text-align: left;
     width: 24%
 }
 
@@ -317,7 +317,7 @@ table {
 .compare-wrap .first-content, .compare-wrap .second-content {
     border: .1px solid rgba(153, 153, 153, 0.38);
     padding: 0px;
-    background: #fff;
+    background: #f5f5f5;
 }
 .compare-wrap .first-content .image img, .compare-wrap .second-content .image img {
     height: 175px;
@@ -327,9 +327,7 @@ table {
     position: relative;
     margin-bottom: 30px;
 }
-.compare-wrapper :hover{
-    transform: scale(1.01);
-}
+
 .compare-wrap .view-more {
         position: absolute;
     z-index: 11;
@@ -354,7 +352,7 @@ table {
     font-weight: 100;
     margin-top: 14px;
 }
-.compare-wrap .first-content .name .Price-detail, .compare-wrap .second-content .name .Price-detail {
+.Price-detail{
     color: #dc9a19;
     font-size: 20px;
     font-weight: 600;
@@ -452,7 +450,7 @@ h4.important i.fa {
     right: 33%;
 }
 h4.important:nth-child(3) {
-    border-top: none;
+    border-top: none;#fffdfd
 }
 h4.important {
     font-weight: 100;
@@ -620,3 +618,184 @@ ul.desc {
     padding-top: 6px;
     color: #752122;
 }
+.bg-grey{
+    background: #fefefe!important;
+}
+
+/*////////CSS helpers classes*/
+
+
+
+
+/*////Margins//////*/
+
+.m-0{
+    margin: 0!important;
+}
+
+.m-5{
+    margin: 5px!important;
+}
+
+.m-t-0{
+    margin-top: 0!important;
+}
+
+.m-b-0{
+    margin-bottom: 0!important;
+}
+
+.m-10{
+    margin: 10px!important;
+}
+
+.m-t-5{
+    margin-top: 5px!important;
+}
+
+.m-t-10{
+    margin-top: 10px!important;
+}
+
+
+.m-t-20{
+    margin-top: 20px!important;
+}
+
+
+.m-b-5{
+    margin-bottom: 5px!important;
+}
+
+.m-b-10{
+    margin-bottom: 10px!important;
+}
+
+.m-b-20{
+    margin-bottom: 20px!important;
+}
+
+
+.m-b-40{
+    margin-bottom: 40px!important;
+}
+
+.m-t-40{
+    margin-top: 40px!important;
+}
+
+.m-t-60{
+    margin-top: 60px!important;
+}
+
+.m-r-20{
+    margin-right: 20px!important;
+}
+
+
+.m-r-40{
+    margin-right: 40px!important;
+}
+
+.m-30{
+    margin: 30px!important;
+}
+
+/*////Ends here///*/
+
+
+
+
+
+/*///Padding//*/
+
+.p-0{
+    padding: 0!important;
+}
+
+.p-5{
+    padding: 5px!important;
+}
+
+
+.p-10{
+    padding: 10px!important;
+}
+
+.p-t-40{
+    padding-top: 40px!important;
+}
+
+.p-b-40{
+    padding-bottom: 40px!important;
+}
+
+
+/*///ends here////*/
+
+
+
+
+/*////Fonts////*/
+
+
+.f-12{
+    font-size: 12px!important;
+}
+
+
+.f-16{
+    font-size: 16px!important;
+}
+
+.f-17{
+    font-size: 17px!important;
+}
+
+.f-18{
+    font-size: 18px!important;
+}
+
+.f-20{
+    font-size: 20px!important;
+}
+
+.f-22{
+    font-size: 22px!important;
+}
+
+
+.f-24{
+    font-size: 24px!important;
+}
+
+.f-29{
+    font-size: 29px!important;
+}
+
+
+.w-100{
+    font-weight: 100!important;
+}
+
+
+.w-500{
+    font-weight: 500!important;
+}
+
+.w-800{
+    font-weight: 800!important;
+}
+
+
+.f-8{
+    font-size: 5em!important;
+}
+
+
+
+
+
+
+
+/*///ends here///*/
