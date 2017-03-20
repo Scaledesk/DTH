@@ -605,6 +605,11 @@ ul.desc {
     width: 544px;
     /* left: -32px; */
 }
+
+
+
+
+/*by garima*/
 .viewmorebtn {
     position: absolute;
     text-transform: capitalize;
@@ -621,6 +626,29 @@ ul.desc {
 .bg-grey{
     background: #fefefe!important;
 }
+
+.bg-darkgrey{
+    background: #f5f5f5;
+}
+
+.bold-text{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.bold-subtext{
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.form-custom-input{
+    border-radius: 0px;
+    padding: 20px!important;
+    background: #f7f7f7;
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    border: 1px solid #d1d1d1;
+}
+
 
 /*////////CSS helpers classes*/
 
@@ -720,6 +748,9 @@ ul.desc {
 
 .p-10{
     padding: 10px!important;
+}
+.p-30{
+    padding: 30px!important;
 }
 
 .p-t-40{
