@@ -125,3 +125,6 @@ $('.panel > .panel-title').click(function(){
     $(this).find('i.fa').removeClass('fa-angle-down').addClass('fa-angle-up')
     }
 });
+$(function(){
+	$('header#header').css('width',window.outerWidth)
+})
