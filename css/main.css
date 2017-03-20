@@ -914,7 +914,7 @@ a.accordion-toggle  i{
   border: 0 none;
   line-height: 24px;
   margin-right:0;
-  padding: 13px 15px;
+  padding: 30px 15px;
 }
 
 .nav-tabs li:last-child{
@@ -946,7 +946,7 @@ a.accordion-toggle  i{
   height: auto;
   border-style:solid;
   border-color: transparent transparent transparent #1f1f20;
-  border-width: 25px 22px;
+  border-width: 42px 22px;
   right: -44px;
   top:0;
 }
