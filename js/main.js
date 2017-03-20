@@ -125,6 +125,7 @@ $('.panel > .panel-title').click(function(){
     $(this).find('i.fa').removeClass('fa-angle-down').addClass('fa-angle-up')
     }
 });
+<<<<<<< HEAD
 
 
 /*
@@ -146,3 +147,8 @@ $(function() {
 		}
 	});
 });
+=======
+$(function(){
+	$('header#header').css('width',window.outerWidth)
+})
+>>>>>>> 99d6f9e0c2a30d38f36f5d4dfd7ead2c543ecc79
