@@ -667,6 +667,32 @@ label{
     border-bottom: 1px solid #d1d1d1;
 }
 
+.header-thankyou {
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    z-index: 54;
+    padding: 22px;
+}
+
+.thank-banner {
+    background: url(../images/thankyou.jpg) center no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    display: -webkit-flex;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+}
+.full-height {
+    height: 100vh;
+}
 
 /*////////CSS helpers classes*/
 
@@ -829,6 +855,10 @@ label{
 
 .f-29{
     font-size: 29px!important;
+}
+
+.f-w{
+    color:#fff!important;
 }
 
 
