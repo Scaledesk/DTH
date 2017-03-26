@@ -102,28 +102,28 @@ section:nth-child(1){
     margin:0px auto;
 }
 
-.membership-pricing-table table .icon-no,.membership-pricing-table table .icon-yes {
-    font-size: 22px
+ .icon-no,.icon-yes {
+    font-size: 22px;
 }
 
-.membership-pricing-table table .icon-no {
-    color: #a93717
+.icon-no {
+    color: #a93717!important;
 }
 
-.membership-pricing-table table .icon-yes {
-    color: #209e61
+.icon-yes {
+    color: #209e61!important;
 }
 
-.membership-pricing-table table .plan-header {
+.plan-header {
     text-align: center;
     font-size: 48px;
     border: 1px solid #e2e2e2;
-    padding: 25px 0
+    padding: 25px 0;
 }
 
 .membership-pricing-table table .plan-header-free {
     background-color: #eee;
-    color: #555
+    color: #555;
 }
 
 .membership-pricing-table table .plan-header-blue {
@@ -525,7 +525,7 @@ h4.important {
 .panel-title i.fa {
     float: right;
     font-size: 24px;
-    margin-top: -6px;
+    margin-top: -10px;
 }
 ul.desc li:before {
     position: absolute;
