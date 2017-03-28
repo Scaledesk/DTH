@@ -1105,6 +1105,10 @@ a.accordion-toggle  i{
   width:inherit;
 }
 
+#pdp-sec{
+  margin-top: 100px;
+}
+
 #carousel-slider .carousel-control.left i {
   left:-25px
 }

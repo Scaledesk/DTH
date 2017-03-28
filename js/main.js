@@ -11,14 +11,12 @@ jQuery(function($) {'use strict',
 	// accordian
 	$('.accordion-toggle').on('click', function(){
 		$(this).closest('.panel-group').children().each(function(){
-		$(this).find('>.panel-heading').removeClass('active');
-		 });
+			$(this).find('>.panel-heading').removeClass('active');
+		});
 
-	 	$(this).closest('.panel-heading').toggleClass('active');
+		$(this).closest('.panel-heading').toggleClass('active');
 	});
-$(function(){
-    $('section').eq(0).css('padding-top', $('#header').outerHeight());
-})
+
 	//Initiat WOW JS
 	new WOW().init();
 
@@ -30,7 +28,7 @@ $(function(){
 			itemSelector : '.portfolio-item',
 			layoutMode : 'fitRows'
 		});
-		
+
 		$portfolio_selectors.on('click', function(){
 			$portfolio_selectors.removeClass('active');
 			$(this).addClass('active');
@@ -56,99 +54,17 @@ $(function(){
 		});
 	});
 
-	
+
 	//goto top
 	$('.gototop').click(function(event) {
 		event.preventDefault();
 		$('html, body').animate({
 			scrollTop: $("body").offset().top
 		}, 500);
-	});	
+	});
 
 	//Pretty Photo
 	$("a[rel^='prettyPhoto']").prettyPhoto({
 		social_tools: false
-	});	
-});
-$(function(){
-	$('#comparison-c').click(function(e){
-		e.preventDefault();
-		if($(this).hasClass('active-1')){
-			$(this).removeClass('active-1');
-			$('#comparison-content').slideUp(100);
-		}else{
-		$(this).addClass('active-1');
-		$('#comparison-content').slideDown(100);
-	}
-	});
-	$('#comparison-content').slideUp(100);
-});
-// $(window).scroll(function(){
-// 	if($(window).scrollTop()>$('#header').outerHeight()+$('#comprasion').outerHeight()+$('#feature').outerHeight()+$('#recent-works').outerHeight()+$('#main-slider').outerHeight()+200){
-// 		$('#comparison-content').slideUp(300);
-// 	}
-// });
-$(function() {
-  $('a[href="#comprasion"]').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top-50
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-/* tabs function */
-$('ul.tabs > li').click(function(){
-    $('div.tab-content').find('div.active-content').removeClass('active-content');
-    $('ul.tabs > li').removeClass('active-tab');
-    $(this).parents('div.tabs-sec').find('div.tab-content').find('div.'+this.className).addClass('active-content');
-    $(this).addClass('active-tab');
-})
-/* tabs function */
-/*accordian function*/
-$('.panel > .panel-title').click(function(){
-    if($(this).parents('.panel').find('.panel-content').hasClass('in')==true){
-        $(this).parents('.panel').find('.panel-content').slideUp(150).removeClass('in');
-        $(this).find('i.fa').removeClass('fa-angle-up').addClass('fa-angle-down');
-    }else if($('.panel-content').hasClass('in')==true){
-        $('.faq-content .panel-content').removeClass('in').slideUp(150);
-        $('.panel-title').find('i.fa').removeClass('fa-angle-up').addClass('fa-angle-down');
-        $(this).parents('.panel').find('.panel-content').slideDown(150).addClass('in');
-        $(this).find('i.fa').removeClass('fa-angle-down').addClass('fa-angle-up');
-    }else{
-    $(this).parents('.panel').find('.panel-content').slideDown(150).addClass('in');
-    $(this).find('i.fa').removeClass('fa-angle-down').addClass('fa-angle-up')
-    }
-});
-<<<<<<< HEAD
-
-
-/*
-sectional scroll*/
-
-
-
-$(function() {
-	$('a[href*="#"]:not([href="#"])').click(function() {
-		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-			var target = $(this.hash);
-			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-			if (target.length) {
-				$('html, body').animate({
-					scrollTop: target.offset().top
-				}, 1000);
-				return false;
-			}
-		}
 	});
 });
-=======
-$(function(){
-	$('header#header').css('width',window.outerWidth)
-})
->>>>>>> 99d6f9e0c2a30d38f36f5d4dfd7ead2c543ecc79
